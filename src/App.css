@@ -1,0 +1,211 @@
+/* Reset default styles and set basic styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 10px;
+}
+
+.navbar a:hover {
+  background-color: #575757;
+  border-radius: 5px;
+}
+
+.navbar .nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar input[type="text"] {
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.navbar button {
+  padding: 8px 16px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navbar button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for messages */
+.message {
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.message.add-to-favorites {
+  background-color: #28a745;
+  color: white;
+}
+
+.message.remove-from-favorites {
+  background-color: #dc3545;
+  color: white;
+}
+
+.message.already-in-favorites {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Content area styles */
+.content {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* MovieList and MovieCard styles */
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.movie-card {
+  width: 200px; 
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  text-align: center; 
+  margin-bottom: 20px;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-card img {
+  width: 100%;
+  height: 270px; 
+  object-fit: cover;
+}
+
+.movie-card h3 {
+  margin: 10px;
+  font-size: 12px; 
+  text-align: center;
+}
+
+.movie-card a {
+  display: block;
+  text-align: center;
+  margin: 10px;
+  text-decoration: none;
+  color: #007BFF;
+}
+
+
+.add-to-favorites-button {
+  background-color: #f2040c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-favorites-button:hover {
+  background-color: #f2040c;
+}
+
+
+.remove-from-favorites-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.remove-from-favorites-button:hover {
+  background-color: #c82333;
+}
+
+
+.movie-details {
+  position: relative;
+}
+
+.movie-details .back-button {
+  position: absolute;
+  top: 5%;
+  left: 20%;
+  transform: translateY(-50%);
+  padding: 8px 16px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.movie-details .back-button:hover {
+  background-color: #0056b3;
+}
+
+.favorite-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #f2040c;
+  transition: color 0.3s ease;
+  margin-top: -27px;
+  float: right;
+}
+
+.favorite-button:hover {
+  color: #f2040c;
+}
+
+.favorite-button.favorited .fa-heart {
+  color: #dc3545;
+}
+
+.favorite-button .fa-heart {
+  transition: color 0.3s ease;
+}
+
+.favorites {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; 
+}
